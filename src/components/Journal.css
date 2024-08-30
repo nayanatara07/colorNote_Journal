@@ -1,0 +1,93 @@
+.journal-container {
+    background-color: #030303;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 50px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+.journal-container h2 {
+    margin-bottom: 20px;
+    color: #27ae60;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.note-editor textarea {
+    width: 97%;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 1em;
+}
+
+.note-editor button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.note-editor button:hover {
+    background-color: #219653;
+}
+
+.notes-list {
+    margin-top: 20px;
+}
+
+.note-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.note-metadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.note-actions button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.note-actions button:hover {
+    background-color: #219653;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
