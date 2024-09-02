@@ -69,7 +69,7 @@ const Journal = () => {
 
     return (
         <div className="journal-container">
-            <h2>Color Note Journal</h2>
+            <h2>CN Journal</h2>
             <div className="note-editor">
                 <textarea
                     value={note}
